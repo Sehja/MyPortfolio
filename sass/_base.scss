@@ -7,6 +7,7 @@
 }
 
 body {
+    position: relative;
     background-image: $gradient;
     width: 100%;
     // overflow: hidden;
@@ -26,13 +27,26 @@ a {
     margin: 0 auto;
 }
 
+.pageup {
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+
+    img {
+        width: 100%;
+    }
+}
+
 @keyframes animationPhoto {
     0% {
-        transform: translate(0, 0);
+        transform: translate(0, 0) scale(0);
     }
 
     100% {
-        transform: translate(8%, 12%);
+        transform: translate(8%, 12%) scale(1);
     }
 }
 

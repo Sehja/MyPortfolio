@@ -6,6 +6,7 @@
   box-sizing: border-box; }
 
 body {
+  position: relative;
   background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
   width: 100%;
   color: #ffffff;
@@ -20,11 +21,21 @@ a {
   width: 85vw;
   margin: 0 auto; }
 
+.pageup {
+  display: block;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  width: 70px;
+  height: 70px; }
+  .pageup img {
+    width: 100%; }
+
 @keyframes animationPhoto {
   0% {
-    transform: translate(0, 0); }
+    transform: translate(0, 0) scale(0); }
   100% {
-    transform: translate(8%, 12%); } }
+    transform: translate(8%, 12%) scale(1); } }
 
 @keyframes animationToRight {
   0% {
