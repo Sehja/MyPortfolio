@@ -140,7 +140,8 @@ a {
   .header__subtitle {
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    animation: animationToLeft .8s ease-in-out; }
   .header__title {
     background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
     -webkit-background-clip: text;
@@ -149,7 +150,7 @@ a {
     font-size: 60px;
     margin-bottom: 50px;
     transition: all .4s;
-    animation: animationToRight .9s ease-in-out; }
+    animation: animationToRight 1s ease-in-out; }
   .header__photo {
     width: 280px;
     height: 280px;
@@ -171,7 +172,7 @@ a {
       animation: animationPhoto .9s ease-in-out;
       z-index: 10s; }
   .header__social-icon {
-    animation: animationToLeft .9s ease-in-out; }
+    animation: animationToLeft 1.4s ease-in-out; }
     .header__social-icon:not(:last-child) {
       margin-right: 20px; }
   .header .fa-brands {
