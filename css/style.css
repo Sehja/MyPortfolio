@@ -174,7 +174,7 @@ a {
   .header__social-icon {
     animation: animationToLeft 1.4s ease-in-out; }
     .header__social-icon:not(:last-child) {
-      margin-right: 20px; }
+      margin-right: 21px; }
   .header .fa-brands {
     font-size: 26px; }
 
