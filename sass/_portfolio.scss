@@ -1,0 +1,48 @@
+.portfolio {
+
+    &__box {
+        display: block;
+        width: 50%;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        margin: 90px auto;
+        box-shadow: 4px 4px 100px 4px rgba(0, 0, 0, 0.25);
+        transition: all .4s;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 40px 40px 200px 40px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .nexter {
+        color: #c69963;
+    }
+
+    .natours {
+        color: #4ebc75;
+    }
+
+    .trillo {
+        color: #dd2d60;
+    }
+
+    .bottle {
+        color: #efdf32;
+    }
+
+    .space {
+        color: #182844;
+    }
+}

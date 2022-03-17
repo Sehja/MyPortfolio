@@ -12,6 +12,8 @@ body {
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth; }
+  body ::selection {
+    background-color: #F1B8D2; }
 
 a {
   text-decoration: none;
@@ -20,6 +22,11 @@ a {
 .container {
   width: 85vw;
   margin: 0 auto; }
+
+.heading {
+  margin-left: 121px;
+  font-size: 32px;
+  margin-bottom: 120px; }
 
 .pageup {
   display: block;
@@ -60,17 +67,13 @@ a {
     text-shadow: none; } }
 
 .skills {
-  padding: 150px 0; }
-  .skills__heading {
-    margin-left: 121px;
-    font-size: 32px; }
+  padding: 100px 0 40px; }
   .skills__title {
     transition: all .3s; }
     .skills__title:hover {
       transform: scale(1.6);
       text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #c6f0e2, 0 0 82px #c6f0e2, 0 0 92px #c6f0e2; }
   .skills__wrapper {
-    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -165,7 +168,6 @@ a {
       border-radius: 10%;
       box-shadow: -4px -4px 70px 20px rgba(0, 0, 0, 0.25);
       transition: all .4s;
-      cursor: pointer;
       animation: animationPhoto .9s ease-in-out;
       z-index: 10s; }
   .header__social-icon {
@@ -174,3 +176,58 @@ a {
       margin-right: 20px; }
   .header .fa-brands {
     font-size: 26px; }
+
+.about {
+  padding: 60px 0 40px; }
+  .about__box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #ffffff;
+    border-radius: 6px;
+    width: 50%;
+    padding: 20px;
+    margin: 60px auto;
+    text-align: center;
+    transition: all .4s;
+    box-shadow: 4px 4px 100px 4px rgba(0, 0, 0, 0.25); }
+    .about__box:hover {
+      transform: rotate(3deg) scale(1.1);
+      border: 2px solid #ffffff;
+      box-shadow: 40px 40px 200px 40px rgba(255, 255, 255, 0.25); }
+  .about__title {
+    font-size: 20px; }
+
+.portfolio__box {
+  display: block;
+  width: 50%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 90px auto;
+  box-shadow: 4px 4px 100px 4px rgba(0, 0, 0, 0.25);
+  transition: all .4s; }
+  .portfolio__box:hover {
+    transform: scale(1.1);
+    box-shadow: 40px 40px 200px 40px rgba(0, 0, 0, 0.25); }
+
+.portfolio__img {
+  max-width: 100%; }
+
+.portfolio h4 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px; }
+
+.portfolio .nexter {
+  color: #c69963; }
+
+.portfolio .natours {
+  color: #4ebc75; }
+
+.portfolio .trillo {
+  color: #dd2d60; }
+
+.portfolio .bottle {
+  color: #efdf32; }
+
+.portfolio .space {
+  color: #182844; }
