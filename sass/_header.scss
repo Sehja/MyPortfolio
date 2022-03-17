@@ -69,10 +69,10 @@
         -webkit-background-clip: text;
         color: transparent;
         -webkit-box-decoration-break: clone;
-        font-size: 70px;
+        font-size: 60px;
         margin-bottom: 50px;
         transition: all .4s;
-        animation: animationText .9s ease-in-out;
+        animation: animationToRight .9s ease-in-out;
     }
 
     &__photo {
