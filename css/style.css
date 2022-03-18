@@ -126,8 +126,10 @@ a {
     .header__link:hover {
       background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
       -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
-      -webkit-box-decoration-break: clone; }
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
   .header__bottom {
     margin-top: 40px;
     padding: 0 121px;
@@ -143,10 +145,7 @@ a {
     margin-bottom: 20px;
     animation: animationToLeft .8s ease-in-out; }
   .header__title {
-    background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-box-decoration-break: clone;
+    color: #666666;
     font-size: 60px;
     margin-bottom: 50px;
     transition: all .4s;
@@ -155,8 +154,10 @@ a {
     width: 280px;
     height: 280px;
     margin-right: 40px;
-    border: 4px dotted rgba(102, 102, 102, 0.5);
-    border-radius: 10%;
+    border: 4px dashed transparent;
+    -webkit-border-image: -webkit-linear-gradient(#F1B8D2, #95BBE9);
+    border-image: -webkit-linear-gradient(#F1B8D2, #95BBE9);
+    border-image-slice: 1;
     padding: 10px; }
     .header__photo img {
       display: inline-block;
@@ -166,7 +167,7 @@ a {
       width: 100%;
       height: 100%;
       display: inline-block;
-      border-radius: 10%;
+      border-radius: 6px;
       box-shadow: -4px -4px 70px 20px rgba(0, 0, 0, 0.25);
       transition: all .4s;
       animation: animationPhoto .9s ease-in-out;
@@ -178,8 +179,38 @@ a {
   .header .fa-brands {
     font-size: 26px; }
 
+.footer {
+  padding-bottom: 30px; }
+  .footer__heading {
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 80px; }
+  .footer__wrapper {
+    width: 70%;
+    padding: 40px 60px 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; }
+  .footer__link {
+    opacity: .7;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    background-image: radial-gradient(#F1B8D2, #95BBE9);
+    transition: all .3s; }
+    .footer__link:hover {
+      opacity: 1; }
+
 .about {
-  padding: 60px 0 40px; }
+  padding: 60px 0 90px; }
   .about__box {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px dashed #ffffff;
@@ -228,7 +259,12 @@ a {
   color: #dd2d60; }
 
 .portfolio .bottle {
-  color: #efdf32; }
+  background-image: linear-gradient(to right, #f4eb7f, #1b4d64);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone; }
 
 .portfolio .space {
   color: #182844; }

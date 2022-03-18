@@ -6987,8 +6987,11 @@ readers do not read off random characters that represent icons */
 
 .fa-instagram:before {
   content: "\f16d";
-  color: inherit;
   transition: all .3s;
+  background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-box-decoration-break: clone;
 
 }
 
@@ -7538,8 +7541,11 @@ readers do not read off random characters that represent icons */
 
 .fa-telegram:before {
   content: "\f2c6";
-  color: inherit;
   transition: all .3s;
+  background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-box-decoration-break: clone;
 }
 
 .fa-telegram:hover::before {
@@ -7660,8 +7666,11 @@ readers do not read off random characters that represent icons */
 
 .fa-vk::before {
   content: "\f189";
-  color: inherit;
   transition: all .3s;
+  background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-box-decoration-break: clone;
 
 }
 
@@ -7692,8 +7701,11 @@ readers do not read off random characters that represent icons */
 
 .fa-whatsapp:before {
   content: "\f232";
-  color: inherit;
   transition: all .3s;
+  background-image: linear-gradient(to left, #F1B8D2, #95BBE9);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-box-decoration-break: clone;
 
 }
 

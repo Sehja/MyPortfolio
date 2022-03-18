@@ -39,7 +39,12 @@
     }
 
     .bottle {
-        color: #efdf32;
+        background-image: linear-gradient(to right, #f4eb7f, #1b4d64);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
     }
 
     .space {

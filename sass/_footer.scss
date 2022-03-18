@@ -1,0 +1,40 @@
+.footer {
+    padding-bottom: 30px;
+
+    &__heading {
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 80px;
+
+    }
+
+    &__wrapper {
+        width: 70%;
+        padding: 40px 60px 40px;
+        background-color: #fff;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__link {
+        opacity: .7;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 10px 10px 10px;
+        width: 200px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        background-image: radial-gradient(#F1B8D2, #95BBE9);
+        transition: all .3s;
+
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
